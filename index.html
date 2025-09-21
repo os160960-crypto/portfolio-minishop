@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벽돌깨기 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>벽돌깨기 게임</h1>
+        <div class="game-info">
+            <div class="score">점수: <span id="score">0</span></div>
+            <div class="level">레벨: <span id="level">1</span></div>
+            <div class="lives">생명: <span id="lives">3</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <p>조작법: 마우스로 패들을 움직이세요</p>
+            <button id="startBtn">게임 시작</button>
+            <button id="pauseBtn">일시정지</button>
+            <button id="resetBtn">다시 시작</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

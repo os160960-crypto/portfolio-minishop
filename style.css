@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.score, .level, .lives {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+#gameCanvas {
+    border: 3px solid #00ff00;
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    cursor: none;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+button {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#startBtn {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+}
+
+#pauseBtn {
+    background: linear-gradient(45deg, #feca57, #ff9ff3);
+}
+
+#resetBtn {
+    background: linear-gradient(45deg, #ff7675, #d63031);
+}
+
+/* 게임 오버 스타일 */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    z-index: 1000;
+}
+
+.game-over h2 {
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+.game-over button {
+    margin-top: 15px;
+}
